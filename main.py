@@ -1,4 +1,5 @@
 from stats import word_counter
+from stats import character_counter
 
 
 def main(converted_book_to_string):
@@ -12,4 +13,6 @@ def get_book_text():
         return converted_book_to_string
     
 
-print(f"{word_counter(get_book_text)} words found in the document")
+#print(f"{word_counter(get_book_text)} words found in the document")
+print(f"{character_counter(get_book_text)}")
+#print(f"{get_book_text()}")
