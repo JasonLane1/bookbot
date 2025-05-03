@@ -15,7 +15,12 @@ def get_book_text():
     
 
 my_dict_ = character_counter(get_book_text)
+
+
+print("============ BOOKBOT ============")
+print("Analyzing book found at books/frankenstein.txt...")
+print("----------- Word Count ----------")
+print(f"Found {word_counter(get_book_text)} total words")
+print("--------- Character Count -------")
 sorted_dict_ = sort_my_dict(my_dict_)
-
-
-print(sorted_dict_)
+print("============= END ===============")

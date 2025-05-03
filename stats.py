@@ -35,6 +35,6 @@ def sort_my_dict(my_dict):
     for item in range(0, sorted_list_len):
         if sorted_list[item]["char"].isalpha():
             print(f"{sorted_list[item]['char']}: {sorted_list[item]['num']}")
-    return "============= END ==============="
+    return None
     
             
