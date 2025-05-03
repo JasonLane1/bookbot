@@ -1,5 +1,6 @@
 from stats import word_counter
 from stats import character_counter
+from stats import sort_my_dict
 
 
 def main(converted_book_to_string):
@@ -13,6 +14,8 @@ def get_book_text():
         return converted_book_to_string
     
 
-#print(f"{word_counter(get_book_text)} words found in the document")
-print(f"{character_counter(get_book_text)}")
-#print(f"{get_book_text()}")
+my_dict_ = character_counter(get_book_text)
+sorted_dict_ = sort_my_dict(my_dict_)
+
+
+print(sorted_dict_)

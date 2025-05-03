@@ -21,6 +21,11 @@ def character_counter(raw_string):
     return my_dict
 
 
-
-
+def sort_my_dict(my_dict):
+    sorted_dict = {"char": "", "num": ""}
+    for x, y in my_dict.items():
+        sorted_dict["char"] = x
+        sorted_dict["num"] = y
+        print(sorted_dict)
+    return sorted_dict
     
