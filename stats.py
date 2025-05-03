@@ -32,8 +32,9 @@ def sort_my_dict(my_dict):
     sorted_list.sort(key=lambda item: item["num"], reverse=True)
     
     sorted_list_len = len(sorted_list)
-    for list in range(0, sorted_list_len):
-        if sorted_list[list]["char"].isalpha():
-            print(f"{sorted_list[list]["char"]}: {sorted_list[list]["num"]}")
-
+    for item in range(0, sorted_list_len):
+        if sorted_list[item]["char"].isalpha():
+            print(f"{sorted_list[item]['char']}: {sorted_list[item]['num']}")
+    return "============= END ==============="
+    
             
