@@ -22,10 +22,18 @@ def character_counter(raw_string):
 
 
 def sort_my_dict(my_dict):
-    sorted_dict = {"char": "", "num": ""}
+    sorted_list = []
     for x, y in my_dict.items():
+        sorted_dict = {"char": "", "num": ""}
         sorted_dict["char"] = x
         sorted_dict["num"] = y
-        print(sorted_dict)
-    return sorted_dict
+        sorted_list.append(sorted_dict)
     
+    sorted_list.sort(key=lambda item: item["num"], reverse=True)
+    
+    sorted_list_len = len(sorted_list)
+    for list in range(0, sorted_list_len):
+        if sorted_list[list]["char"].isalpha():
+            print(f"{sorted_list[list]["char"]}: {sorted_list[list]["num"]}")
+
+            
