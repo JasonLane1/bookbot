@@ -20,7 +20,8 @@ def character_counter(raw_string):
             my_dict[char] = 1
     return my_dict
 
-
+#Sorts the dictionary back into a list - Sorts the list from highest value in "num" to lowest - prints line by line
+#"Char" value and "num" value
 def sort_my_dict(my_dict):
     sorted_list = []
     for x, y in my_dict.items():
